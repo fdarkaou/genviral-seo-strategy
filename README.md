@@ -251,6 +251,62 @@ Every user-generated slideshow/video with a "make public" toggle → indexed pag
 
 **You have 3,296 users. At 30% public opt-in = ~10k pages today. At 10k users = 100k pages. Zero content effort.**
 
+---
+
+### 🔥 NEW: Viral Content Library as pSEO Asset *(already in Supabase)*
+
+**This is a head start photo.ai doesn't have.** GenViral already owns a curated library of proven viral content:
+
+| Table | Records | Content |
+|-------|---------|---------|
+| `viral_content_slideshows` | **4,118** | TikTok viral videos — hook text, captions, engagement metrics, scraped images, video CDN URLs |
+| `apify_tiktok_content` | **22,243** | Broader TikTok dataset with captions, hashtags, views, likes |
+| **Total** | **26,361** | Ready to index |
+
+**Sample data quality (from top records):**
+- Clash of Clans: 147M views — hook: *"I told her I game"*
+- Sleep music creator: 95M views — hook: *"I know that feeling when you lie in bed but can't sleep"*
+- Cheaterbuster: 78M views — hook: *"calling the girl I found in this phone and finding out I'm the other woman"*
+
+Categories in library: Arts & Entertainment, Business & Finance, Health & Wellness, Beauty & Fashion, Education, Relationships & Lifestyle, Spirituality
+
+**The honest SEO assessment:**
+
+Direct keyword volume for "viral tiktok examples" = ~0/month. "Tiktok hook examples" = 20/month. These are not high-traffic search terms.
+
+**But that's the wrong lens.** The play here is not keyword ranking — it's:
+
+1. **Individual video pages (long-tail volume)**: 26K pages at 10-30 visits/month avg = 260K-780K monthly visits from search + social
+2. **Hub/category pages**: `/viral-content/business` ranking for "business tiktok content ideas" (40/mo, high intent) — one page per category serving multiple keywords
+3. **Blog posts powered by library data**: "50 Viral TikTok Hooks for Small Businesses" — pulls real examples from the library, targets the higher-volume informational keywords
+4. **Tool integration**: Hook Generator tool page shows 3 real examples from the library for the selected niche → massive trust signal + SEO anchor text
+5. **Creator community sharing**: Creators bookmark and share these pages (Pinterest, Twitter threads, newsletters) → backlinks + brand discovery
+
+**Recommended URL structure:**
+```
+genviral.io/viral-content/[id]                        → individual video page
+genviral.io/viral-content/[category]                  → category hub page
+genviral.io/viral-content/[category]/[hook-type]      → filtered view
+genviral.io/blog/viral-tiktok-hooks-[niche]           → blog post using library data
+```
+
+**Category hub page keywords (low volume, high intent):**
+| Page | Target keyword | Vol | KD | Notes |
+|------|---------------|-----|-----|-------|
+| `/viral-content/business` | "business tiktok content ideas" | 40 | low | High intent |
+| `/viral-content/fitness` | "fitness tiktok content ideas" | est. 50 | low | Growing niche |
+| `/viral-content/beauty` | "beauty tiktok content ideas" | est. 30 | low | Competitor: Later |
+| `/blog/viral-tiktok-hooks-business` | "tiktok hook ideas" | 30 | 4 | Blog post wins |
+| `/tools/hook-generator/tiktok` | "tiktok hook generator" | 40 | low | **$22.39 CPC** |
+
+**The $22.39 CPC insight:** "tiktok hook generator" has one of the highest CPCs in the dataset. Someone's paying that much per click — the audience is marketers with budget. The library powers the hook generator tool page with real examples = better tool = better conversion.
+
+**Implementation priority:**
+1. Ship category hub pages first (6 categories, fast to build)
+2. Add library examples to existing hook generator tool pages
+3. Write 3 blog posts using library data for top niches (business, fitness, beauty)
+4. Individual video pages last — only after hub pages are indexed and getting traffic
+
 #### 📄 Page Structure — UGC Gallery Page
 
 ```
